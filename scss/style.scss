@@ -2,8 +2,43 @@
 @import "colors";
 @import "typography";
 
+
+main {
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+    filter: blur(10px);
+    position: relative;
+}
+
+header {
+    position: absolute;
+    top: 0;
+}
+
+section {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -300px;
+    margin-left: -450px;
+    max-width: 900px;
+}
+
+.video {
+    width: 100%;
+    height: 600px;
+}
+
 .thumb {
     width: 400px;
     height: auto;
 }
+
+#results {
+    margin-top: 200px;
+}
+
 @import "media-queries";
