@@ -36,15 +36,19 @@ $(document).ready(function () {
             console.log(data);
             var ul = document.getElementById('results');
             $.each(data.items, function (i, item) {
+                var myObj = item.snippet.thumbnails;
+
+                var topRes = myObj[ Object.keys(myObj).pop() ];
+                var thumb = topRes.url;
                 
                 var title = item.snippet.title;
                 var vid = item.snippet.resourceId.videoId;
-                el = document.createElement('li');
-                el.innerHTML = `<h3>${title}</h3><iframe width="560" height="315" src="https://www.youtube.com/embed/${vid}?list=PLE1s7sjYTvsDKM_0xycnw0EzpgkBgT3ar" frameborder="0" allowfullscreen></iframe>`;
+                var el = document.createElement('li');
+                el.innerHTML = `<h3>${title}</h3><img src="${thumb}" class="thumb" data-key="${vid}">`;
                 ul.appendChild(el);
             });
         }
     );
 
-    // <iframe width="560" height="315" src="https://www.youtube.com/embed/KsGp64w3XsA?list=PLE1s7sjYTvsDKM_0xycnw0EzpgkBgT3ar" frameborder="0" allowfullscreen></iframe>
+    // `<h3>${title}</h3><iframe width="560" height="315" src="https://www.youtube.com/embed/${vid}?list=PLE1s7sjYTvsDKM_0xycnw0EzpgkBgT3ar" frameborder="0" allowfullscreen></iframe>`
 });

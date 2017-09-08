@@ -7,8 +7,22 @@
 
 h1 {
     @include font-base;
-    font-size: 14rem;
+    font-size: 5rem;
     font-weight: 900;
+    letter-spacing: -0.05em;
+}
+
+h2 {
+    @include font-base;
+    font-size: 3rem;
+    font-weight: 900;
+    letter-spacing: -0.05em;
+}
+
+h3 {
+    @include font-base;
+    font-size: 2rem;
+    font-weight: 300;
     letter-spacing: -0.05em;
 }
 
@@ -16,7 +30,3 @@ a {
     @include font-base;
     transition: color .3s ease-in-out;
 }
-
-::selection {background: saturate($brand, 100)}
-
-::-moz-selection {background: saturate($brand, 100)}
