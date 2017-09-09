@@ -29,21 +29,18 @@ $(document).ready(function () {
         'https://www.googleapis.com/youtube/v3/playlistItems', {
             part: 'snippet',
             key: key,
-            maxResults: 16,
+            maxResults: 50,
             playlistId: playlistId
         },
         function (data) {
             console.log(data);
             $.each(data.items, function (i, item) {
-                var myObj = item.snippet.thumbnails;
-
-                var topRes = myObj[ Object.keys(myObj).pop() ];
-                var thumb = topRes.url;
+                var thumb = item.snippet.thumbnails.medium.url;
                 
                 var title = item.snippet.title;
                 var vid = item.snippet.resourceId.videoId;
 
-                
+
                 $('#results').append(`<div class="item"><div style="background-image: url(${thumb});" class="thumb" data-key="${vid}"></div><h3>${title}</h3></div>`);
             });
         }
