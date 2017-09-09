@@ -29,7 +29,7 @@ $(document).ready(function () {
         'https://www.googleapis.com/youtube/v3/playlistItems', {
             part: 'snippet',
             key: key,
-            maxResults: 10,
+            maxResults: 16,
             playlistId: playlistId
         },
         function (data) {
@@ -42,6 +42,8 @@ $(document).ready(function () {
                 
                 var title = item.snippet.title;
                 var vid = item.snippet.resourceId.videoId;
+
+                
                 $('#results').append(`<div class="item"><div style="background-image: url(${thumb});" class="thumb" data-key="${vid}"></div><h3>${title}</h3></div>`);
             });
         }
