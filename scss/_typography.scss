@@ -22,8 +22,12 @@ h2 {
 h3 {
     @include font-base;
     font-size: 1rem;
-    font-weight: 300;
+    font-weight: 100;
     letter-spacing: -0.05em;
+}
+
+span {
+    color: #ee1111;
 }
 
 a {

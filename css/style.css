@@ -58,8 +58,11 @@ h3 {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-size: 1rem;
-  font-weight: 300;
+  font-weight: 100;
   letter-spacing: -0.05em; }
+
+span {
+  color: #ee1111; }
 
 a {
   font-family: 'Muli', sans-serif;
@@ -77,7 +80,7 @@ main {
   width: 100vw;
   -webkit-filter: blur(10px);
           filter: blur(10px);
-  position: relative; }
+  position: fixed; }
 
 header {
   position: absolute;
@@ -85,22 +88,26 @@ header {
 
 section {
   position: absolute;
-  top: 15%;
+  top: 2%;
   height: 100vh;
   width: 100vw;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  padding: 0 120px; }
+  padding: 0 20px; }
 
 .wrapper {
   max-width: 1000px;
   margin: 0 auto; }
 
+.logo {
+  color: white;
+  text-shadow: 0px 0px 6px rgba(0, 0, 0, 0.1); }
+
 .videoWrapper {
   position: relative;
-  padding-bottom: 56.25%;
+  padding-bottom: 54%;
   /* 16:9 */
-  padding-top: 25px;
+  padding-top: 22px;
   height: 0; }
 
 .videoWrapper iframe {
@@ -124,10 +131,19 @@ section {
 
 .item {
   width: 220px;
-  margin: 10px; }
+  margin: 10px;
+  cursor: pointer;
+  overflow: hidden; }
 
 .thumb {
-  width: 100%;
-  height: auto; }
+  width: 220px;
+  height: 122px;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: 220px auto;
+  -webkit-transition: all 0.7s ease-in-out;
+  transition: all 0.7s ease-in-out; }
+  .thumb:hover {
+    background-size: 250px auto; }
 
 /*----------  Break Point 1 - 1000px  ----------*/

@@ -42,7 +42,7 @@ $(document).ready(function () {
                 
                 var title = item.snippet.title;
                 var vid = item.snippet.resourceId.videoId;
-                $('#results').append(`<div class="item"><img src="${thumb}" class="thumb" data-key="${vid}"><h3>${title}</h3></div>`);
+                $('#results').append(`<div class="item"><div style="background-image: url(${thumb});" class="thumb" data-key="${vid}"></div><h3>${title}</h3></div>`);
             });
         }
     );
