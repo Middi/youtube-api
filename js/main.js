@@ -29,8 +29,9 @@ $(document).ready(function () {
         'https://www.googleapis.com/youtube/v3/playlistItems', {
             part: 'snippet',
             key: key,
-            maxResults: 50,
-            playlistId: playlistId
+            maxResults: 10,
+            playlistId: playlistId,
+            pageToken: 'CAoQAA'
         },
         function (data) {
             console.log(data);
