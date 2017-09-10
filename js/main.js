@@ -49,7 +49,7 @@ $(document).ready(function () {
                 </div>
                 <div class="vid-details">
                     <h3>${title}</h3>
-                    <p>${desc}</p>
+                    <p class="description">${desc}</p>
                 </div>
             </article>`);
             });
