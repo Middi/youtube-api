@@ -40,14 +40,17 @@ span {
     color: #ee1111;
 }
 
-a {
-    @include font-base;
-    transition: color .3s ease-in-out;
-}
-
-
 .load-more {
+    @include font-base;
+    color: $dark;
+    transition: color .3s ease-in-out;
     background-color: none;
     border: 1px solid $border;
     padding: 8px 14px;
+    border-radius: 4px;
+}
+
+.disabled {
+    color: $light;
+    cursor: no-drop;
 }
