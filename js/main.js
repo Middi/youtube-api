@@ -39,10 +39,19 @@ $(document).ready(function () {
                 var thumb = item.snippet.thumbnails.medium.url;
                 
                 var title = item.snippet.title;
+                var desc = item.snippet.description.substring(0, 100);;
                 var vid = item.snippet.resourceId.videoId;
 
 
-                $('#results').append(`<div class="item"><div style="background-image: url(${thumb});" class="thumb" data-key="${vid}"></div><h3>${title}</h3></div>`);
+                $('main').append(`<article class="item">
+                <div class="thumb-container">
+                    <img src="${thumb}" class="thumb" data-key="${vid}">
+                </div>
+                <div class="vid-details">
+                    <h3>${title}</h3>
+                    <p>${desc}</p>
+                </div>
+            </article>`);
             });
         }
     );

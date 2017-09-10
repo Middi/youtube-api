@@ -19,6 +19,17 @@
 		"oF": 0,
 		"oS": 3
 		},
+	"\/images\/logo.png": {
+		"ft": 32768,
+		"iS": 20462,
+		"oA": 0,
+		"oAP": "\/images\/logo.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
 	"\/index.html": {
 		"ft": 8192,
 		"oA": 2,
