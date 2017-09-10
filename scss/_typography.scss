@@ -46,7 +46,8 @@ a {
 }
 
 
-button {
-    width: 100px;
-    
+.load-more {
+    background-color: none;
+    border: 1px solid $border;
+    padding: 8px 14px;
 }
