@@ -101,11 +101,14 @@ span {
 body {
   background-color: #e9e9e9; }
 
-header, footer {
+header, footer, section {
   background-color: #e9e9e9;
   width: 100%;
   position: fixed;
   z-index: 10; }
+
+section {
+  top: 60px; }
 
 footer {
   position: relative; }
@@ -129,6 +132,15 @@ footer {
   -webkit-box-sizing: border-box;
           box-sizing: border-box; }
 
+.inner-section {
+  height: auto;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  max-width: 540px;
+  margin: 0 auto;
+  border-left: 1px solid #b4babe;
+  border-right: 1px solid #b4babe; }
+
 .inner-footer {
   padding-top: 20px;
   height: 100px;
@@ -142,7 +154,7 @@ main {
   margin: 0 auto;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  padding: 70px 4px 10px;
+  padding: 380px 4px 10px;
   border-left: 1px solid #b4babe;
   border-right: 1px solid #b4babe;
   text-align: center; }
@@ -195,6 +207,25 @@ article {
   margin-top: 4px;
   word-wrap: break-word;
   word-break: break-word; }
+
+.wrapper {
+  max-width: 540px;
+  overflow: hidden;
+  margin: 0 auto; }
+
+.videoWrapper {
+  position: relative;
+  padding-bottom: 54%;
+  /* 16:9 */
+  padding-top: 12px;
+  height: 0; }
+
+.videoWrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%; }
 
 /*----------  Break Point 1 - 1000px  ----------*/
 @media only screen and (max-width: 500px) {

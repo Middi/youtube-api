@@ -1,6 +1,6 @@
-var channelId = 'UCZGRMfmMo7FduF7qoloUqwg';
+var channelId = 'UCX-b8pihLF-Q9mOhpTILfjw';
 var key = 'AIzaSyDcwEYXvmlat_s2gYCTUjOPJlZywkIwu10';
-var playlistId = "PLE1s7sjYTvsDKM_0xycnw0EzpgkBgT3ar";
+var playlistId = "PL7Mh8U8DxyOG0zVj_5cpXYgFxGZ57CcJk";
 var token = null;
 
 $(document).ready(function () {
@@ -14,11 +14,10 @@ $(document).ready(function () {
     //         channelId: channelId
     //     },
     //     function (data) {
+    //         console.log(data);
     //         $.each(data.items, function (i, item) {
-    //             if (item.snippet.title === "Happy Tunes") {
     //                 var playlistTitle = item.snippet.title;
     //                 document.getElementById("playlist-title").textContent = playlistTitle;
-    //             }
     //         });
     //     }
     // )
@@ -69,7 +68,7 @@ $(document).ready(function () {
                     var desc = item.snippet.description.substring(0, 100);
                     var vid = item.snippet.resourceId.videoId;
 
-                    $('main').append(`<article class="item">
+                    $('#results').append(`<article class="item">
                 <div class="thumb-container">
                     <img src="${thumb}" class="thumb" data-key="${vid}">
                 </div>
