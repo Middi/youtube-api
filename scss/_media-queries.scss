@@ -1,4 +1,4 @@
-/*----------  Break Point 1 - 1000px  ----------*/
+/*----------  Break Point 1 - 500px  ----------*/
 
 @media only screen and (max-width: 500px) {
 
@@ -8,17 +8,13 @@
     
     .vid-details {padding: 14px}
 
-    .inner-header, .inner-footer, .inner-section, main {
-        border: none;
-    }
+    .inner-header,
+    .inner-footer,
+    .inner-section,
+    main
+    {border: none}
 
-    .inner-header {
-        border-bottom: 1px solid $border;
-    }
+    .inner-header {border-bottom: 1px solid $border;}
 
-    main {
-
-    padding: 280px 4px 10px;
-    }
-    
+    main {padding: 280px 4px 10px}
 }

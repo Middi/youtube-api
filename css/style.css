@@ -47,16 +47,6 @@ h1 {
   font-weight: 900;
   letter-spacing: -0.05em; }
 
-h2 {
-  font-family: 'Montserrat', sans-serif;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  line-height: 1.2;
-  font-size: 3rem;
-  font-weight: 900;
-  letter-spacing: -0.05em; }
-
 h3 {
   font-family: 'Montserrat', sans-serif;
   text-rendering: optimizeLegibility;
@@ -76,9 +66,6 @@ p {
   font-size: .7em;
   font-weight: 500;
   color: #9ea9b2; }
-
-span {
-  color: #ee1111; }
 
 .load-more {
   font-family: 'Montserrat', sans-serif;
@@ -148,6 +135,9 @@ footer {
       -ms-flex-align: start;
           align-items: flex-start; }
 
+.header-logo {
+  width: 120px; }
+
 main {
   max-width: 540px;
   background-color: #f6f6f6;
@@ -158,9 +148,6 @@ main {
   border-left: 1px solid #b4babe;
   border-right: 1px solid #b4babe;
   text-align: center; }
-
-.header-logo {
-  width: 120px; }
 
 article {
   border-radius: 8px;
@@ -198,7 +185,7 @@ article {
     height: 100%;
     width: auto;
     -webkit-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%); }
+            transform: translate(-50%, -50%); }
 
 .vid-details {
   padding: 8px 22px; }
@@ -227,7 +214,7 @@ article {
   width: 100%;
   height: 100%; }
 
-/*----------  Break Point 1 - 1000px  ----------*/
+/*----------  Break Point 1 - 500px  ----------*/
 @media only screen and (max-width: 500px) {
   body {
     font-size: 14px; }
@@ -235,7 +222,10 @@ article {
     padding: 0px 8px; }
   .vid-details {
     padding: 14px; }
-  .inner-header, .inner-footer, .inner-section, main {
+  .inner-header,
+  .inner-footer,
+  .inner-section,
+  main {
     border: none; }
   .inner-header {
     border-bottom: 1px solid #b4babe; }

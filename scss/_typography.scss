@@ -15,13 +15,6 @@ h1 {
     letter-spacing: -0.05em;
 }
 
-h2 {
-    @include font-base;
-    font-size: 3rem;
-    font-weight: 900;
-    letter-spacing: -0.05em;
-}
-
 h3 {
     @include font-base;
     font-size: 1em;
@@ -34,10 +27,6 @@ p {
     font-size: .7em;
     font-weight: 500;
     color: $light;
-}
-
-span {
-    color: #ee1111;
 }
 
 .load-more {

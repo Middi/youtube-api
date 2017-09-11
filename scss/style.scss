@@ -2,10 +2,7 @@
 @import "colors";
 @import "typography";
 
-body {
-    background-color: #e9e9e9;
-}
-
+body {background-color: #e9e9e9}
 
 header, footer, section {
     background-color: #e9e9e9;
@@ -14,13 +11,9 @@ header, footer, section {
     z-index: 10;
 }
 
-section {
-    top: 60px;
-}
+section {top: 60px}
 
-footer {
-    position: relative;
-}
+footer {position: relative}
 
 .inner-header, .inner-footer {
     max-width: 540px;
@@ -50,6 +43,8 @@ footer {
     align-items: flex-start;
 }
 
+.header-logo{width: 120px}
+
 main {
     max-width: 540px;
     background-color: $white;
@@ -61,11 +56,6 @@ main {
     text-align: center;
  }
  
-
-.header-logo{
-    width: 120px;
-}
-
 article {
     border-radius: 8px;
     display: flex;
@@ -96,16 +86,11 @@ article {
         top: 50%;
         height: 100%;
         width: auto;
-        -webkit-transform: translate(-50%,-50%);
-            -ms-transform: translate(-50%,-50%);
-                transform: translate(-50%,-50%);
+        transform: translate(-50%,-50%);
     }
 }
 
-.vid-details {
-    padding: 8px 22px;
-}
-
+.vid-details {padding: 8px 22px}
 
 .description {
     margin-top: 4px;
@@ -119,13 +104,13 @@ article {
     margin: 0 auto;
 }
 
-
 .videoWrapper {
 	position: relative;
 	padding-bottom: 54%; /* 16:9 */
 	padding-top: 12px;
     height: 0;
 }
+
 .videoWrapper iframe {
 	position: absolute;
 	top: 0;
@@ -133,8 +118,5 @@ article {
 	width: 100%;
 	height: 100%;
 }
-
-
-
 
 @import "media-queries";

@@ -2,12 +2,23 @@ var channelId = 'UCX-b8pihLF-Q9mOhpTILfjw';
 var key = 'AIzaSyDcwEYXvmlat_s2gYCTUjOPJlZywkIwu10';
 var playlistId = "PL7Mh8U8DxyOG0zVj_5cpXYgFxGZ57CcJk";
 var token = null;
-var firstVid;
+var firstVid = 'STwoa-9jxi0';
 
 $(document).ready(function () {
 
-    // Load Videos On Load
+    // Event Listeners for articles
+    $('main').on('click', 'article', function (e) {
+        if ($(e.currentTarget).hasClass('item')) {
+            var id = $(this).attr('data-key');
+            displayVid(id);
+        }
+    });
+
+
+
+    // Load Videos On Page Load
     loadVids(token);
+    displayVid(firstVid);
 
     //Load More Videos On Click
     $('.load-more').on("click", function (e) {
@@ -43,11 +54,11 @@ $(document).ready(function () {
         if (nextPage === undefined) {
             $('.load-more').attr("data-key", "").html('No More Results').addClass('disabled');
         }
-        else {$('.load-more').attr("data-key", nextPage);}
+        else { $('.load-more').attr("data-key", nextPage); }
     }
 
     //Loop through results and display them on the dom.
-    function resultsLoop(data){
+    function resultsLoop(data) {
         $.each(data.items, function (i, item) {
 
             var thumb = item.snippet.thumbnails.medium.url;
@@ -56,9 +67,9 @@ $(document).ready(function () {
             var vid = item.snippet.resourceId.videoId;
 
             $('main').append(`
-            <article id="item${i + 1}" class="item">
+            <article id="item${i + 1}" class="item" data-key="${vid}">
                 <div class="thumb-container">
-                    <img src="${thumb}" class="thumb" data-key="${vid}">
+                    <img src="${thumb}" class="thumb">
                 </div>
                 <div class="vid-details">
                     <h3>${title}</h3>
@@ -68,12 +79,15 @@ $(document).ready(function () {
         });
     }
 
+    // Select Video Function
+    function displayVid(id) {
+        $('#video').html(`<iframe class="video" src="https://www.youtube.com/embed/${id}?rel=0&amp;controls=1&amp&amp;showinfo=0&amp;modestbranding=0" frameborder="0" allowfullscreen></iframe>`);
+    }
 
 
-    $('#video').html(`<iframe class="video" src="https://www.youtube.com/embed/STwoa-9jxi0?rel=0&amp;controls=1&amp&amp;showinfo=0&amp;modestbranding=0" frameborder="0" allowfullscreen></iframe>`);
-
-
-    // Aspect ratio for video 
+    //--------------------
+    // Aspect ratio for video
+    //-------------------- 
     var $allVideos = $("iframe[src^='//player.vimeo.com'], iframe[src^='//www.youtube.com'], object, embed"),
         $fluidEl = $("figure");
 
