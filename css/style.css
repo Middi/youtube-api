@@ -202,7 +202,7 @@ article {
 
 .videoWrapper {
   position: relative;
-  padding-bottom: 54%;
+  padding-bottom: 53%;
   /* 16:9 */
   padding-top: 12px;
   height: 0; }
