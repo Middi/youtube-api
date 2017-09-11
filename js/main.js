@@ -41,7 +41,7 @@ $(document).ready(function () {
     //Check if there are any results left
     function resultsLeft(nextPage) {
         if (nextPage === undefined) {
-            $('.load-more').attr("data-key", "").html('No More Result').addClass('disabled');
+            $('.load-more').attr("data-key", "").html('No More Results').addClass('disabled');
         }
         else {$('.load-more').attr("data-key", nextPage);}
     }
@@ -55,7 +55,7 @@ $(document).ready(function () {
             var desc = item.snippet.description.substring(0, 100);
             var vid = item.snippet.resourceId.videoId;
 
-            $('#results').append(`
+            $('main').append(`
             <article id="item${i + 1}" class="item">
                 <div class="thumb-container">
                     <img src="${thumb}" class="thumb" data-key="${vid}">
@@ -69,9 +69,6 @@ $(document).ready(function () {
     }
 
 
-    $('#item1').children('.thumb-container').children('.thumb').attr('data-key');
-
-    console.log(firstVid);
 
     $('#video').html(`<iframe class="video" src="https://www.youtube.com/embed/STwoa-9jxi0?rel=0&amp;controls=1&amp&amp;showinfo=0&amp;modestbranding=0" frameborder="0" allowfullscreen></iframe>`);
 

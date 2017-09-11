@@ -91,7 +91,7 @@ span {
   transition: color .3s ease-in-out;
   background-color: none;
   border: 1px solid #b4babe;
-  padding: 8px 14px;
+  padding: 10px 14px;
   border-radius: 4px; }
 
 .disabled {
@@ -143,7 +143,7 @@ footer {
 
 .inner-footer {
   padding-top: 20px;
-  height: 100px;
+  height: 140px;
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start; }
@@ -234,4 +234,10 @@ article {
   article {
     padding: 0px 8px; }
   .vid-details {
-    padding: 14px; } }
+    padding: 14px; }
+  .inner-header, .inner-footer, .inner-section, main {
+    border: none; }
+  .inner-header {
+    border-bottom: 1px solid #b4babe; }
+  main {
+    padding: 280px 4px 10px; } }

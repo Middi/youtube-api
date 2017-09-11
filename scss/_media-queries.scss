@@ -7,5 +7,18 @@
     article {padding: 0px 8px}
     
     .vid-details {padding: 14px}
+
+    .inner-header, .inner-footer, .inner-section, main {
+        border: none;
+    }
+
+    .inner-header {
+        border-bottom: 1px solid $border;
+    }
+
+    main {
+
+    padding: 280px 4px 10px;
+    }
     
 }
