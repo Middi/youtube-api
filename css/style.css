@@ -252,28 +252,13 @@ article {
 
 /*----------  Orientation  ----------*/
 @media screen and (max-width: 700px) and (orientation: landscape) {
-  html {
-    -webkit-transform: rotate(-90deg);
-            transform: rotate(-90deg);
-    -webkit-transform-origin: left top;
-            transform-origin: left top;
-    width: 100vh;
-    overflow-x: hidden;
-    position: absolute;
-    top: 100%;
-    left: 0; }
-  body {
-    font-size: 14px; }
+  footer, section {
+    position: static; }
+  section {
+    padding-top: 50px; }
   article {
     padding: 0px 8px; }
   .vid-details {
     padding: 14px; }
-  .inner-header,
-  .inner-footer,
-  .inner-section,
   main {
-    border: none; }
-  .inner-header {
-    border-bottom: 1px solid #b4babe; }
-  main {
-    padding: 270px 4px 10px; } }
+    padding: 20px 4px 10px; } }

@@ -45,29 +45,13 @@
 /*----------  Orientation  ----------*/
 @media screen and (max-width: 700px) and (orientation: landscape) {
 
-    html {
-      transform: rotate(-90deg);
-      transform-origin: left top;
-      width: 100vh;
-      overflow-x: hidden;
-      position: absolute;
-      top: 100%;
-      left: 0;
-    }
+    footer, section {position: static}
 
-    body {font-size:14px}
+    section {padding-top: 50px}
     
     article {padding: 0px 8px}
     
     .vid-details {padding: 14px}
 
-    .inner-header,
-    .inner-footer,
-    .inner-section,
-    main
-    {border: none}
-
-    .inner-header {border-bottom: 1px solid $border;}
-
-    main {padding: 270px 4px 10px}
+    main {padding: 20px 4px 10px}
   }
