@@ -63,8 +63,12 @@ $(document).ready(function () {
 
             var thumb = item.snippet.thumbnails.medium.url;
             var title = item.snippet.title;
-            var desc = item.snippet.description.substring(0, 100);
             var vid = item.snippet.resourceId.videoId;
+
+            if(item.snippet.description.length > 100) {
+                var desc = item.snippet.description.substring(0, 100) + ' ...';
+            }
+            else {var desc = item.snippet.description;}
 
             $('main').append(`
             <article id="item${i + 1}" class="item" data-key="${vid}">
