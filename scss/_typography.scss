@@ -37,9 +37,12 @@ p {
     border: 1px solid $border;
     padding: 10px 14px;
     border-radius: 4px;
+    transition: .2s all ease-in-out;
+    &:hover {background-color: $hover}
 }
 
 .disabled {
     color: $light;
     cursor: no-drop;
+    &:hover {background-color: $white}
 }
