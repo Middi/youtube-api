@@ -11,7 +11,7 @@ header, footer, section {
     z-index: 10;
 }
 
-section {top: 60px}
+section {top: 50px}
 
 footer {position: relative}
 
@@ -19,7 +19,7 @@ footer {position: relative}
     max-width: 540px;
     margin: 0 auto;
     display: flex;
-    height: 60px;
+    height: 50px;
     justify-content: center;
     align-items: center;
     background-color: $white;
@@ -43,14 +43,14 @@ footer {position: relative}
     align-items: flex-start;
 }
 
-.header-logo{width: 120px}
+.header-logo{width: 110px}
 
 main {
     max-width: 540px;
     background-color: $white;
     margin: 0 auto;
     box-sizing: border-box;
-    padding: 380px 4px 10px;
+    padding: 370px 4px 10px;
     border-left: 1px solid $border;
     border-right: 1px solid $border;
     text-align: center;
