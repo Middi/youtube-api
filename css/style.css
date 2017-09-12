@@ -236,7 +236,9 @@ article {
   .inner-header {
     border-bottom: 1px solid #b4babe; }
   main {
-    padding: 330px 4px 10px; } }
+    padding: 330px 4px 10px; }
+  .videoWrapper {
+    padding-bottom: 53%; } }
 
 /*----------  Break Point 1 - 430px  ----------*/
 @media only screen and (max-width: 430px) {
