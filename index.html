@@ -1,76 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
 
-    <head>
-        <title>Youtube</title>
+<head>
+    <title>Youtube</title>
 
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Global Site Tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-104784108-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
 
-        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600" rel="stylesheet">
+        function gtag() {
+            dataLayer.push(arguments)
+        };
+        gtag('js', new Date());
 
-        <link href="css/style.css" rel="stylesheet">
+        gtag('config', 'UA-104784108-1');
+    </script>
 
-        <!-- Open Graph data -->
-        <meta property="og:title" content="Youtube Playlist" />
-        <meta property="og:type" content="article" />
-        <meta property="og:url" content="https://richardmiddleton.me/projects/youtube" />
-        <meta property="og:image" content="https://richardmiddleton.me/projects/youtube/images/screenshot.jpg" />
-        <meta property="og:description" content="Youtube Playlist app using youtubes API" /> 
-        <meta property="og:site_name" content="Youtube" />
 
-    </head>
-    <body>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <!--===========================
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600" rel="stylesheet">
+
+    <link href="css/style.css" rel="stylesheet">
+
+    <!-- Open Graph data -->
+    <meta property="og:title" content="Youtube Playlist" />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="https://richardmiddleton.me/projects/youtube" />
+    <meta property="og:image" content="https://richardmiddleton.me/projects/youtube/images/screenshot.jpg" />
+    <meta property="og:description" content="Youtube Playlist app using youtubes API" />
+    <meta property="og:site_name" content="Youtube" />
+
+</head>
+
+<body>
+
+    <!--===========================
                     Header
-        ============================-->
-        <header>
-            <div class="inner-header">
-                <img class="header-logo" src="images/logo.png" alt="youtube logo">
-            </div>
-        </header>
+    ============================-->
+    <header>
+        <div class="inner-header">
+            <img class="header-logo" src="images/logo.png" alt="youtube logo">
+        </div>
+    </header>
 
-        <!--===========================
+    <!--===========================
                     Video
-        ============================-->
-        <section>
-            <div class="inner-section">
-                <div class="wrapper">
-                    <div id="video" class="videoWrapper">
-                        <!-- Video Inserted Here -->
-                    </div>
+    ============================-->
+    <section>
+        <div class="inner-section">
+            <div class="wrapper">
+                <div id="video" class="videoWrapper">
+                    <!-- Video Inserted Here -->
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <!--===========================
+    <!--===========================
                 Playlist
-        ============================-->
-        <main>
-            <!-- Playlist Inserted Here -->
-        </main>
+    ============================-->
+    <main>
+        <!-- Playlist Inserted Here -->
+    </main>
 
-        <!--===========================
+    <!--===========================
                 Load More
-        ============================-->
-        <footer>
-            <div class="inner-footer">
-                <a href="#" class="load-more">Load More</a>
-            </div>
-        </footer>
+    ============================-->
+    <footer>
+        <div class="inner-footer">
+            <a href="#" class="load-more">Load More</a>
+        </div>
+    </footer>
 
 
-        <!--===========================
+    <!--===========================
                 Javascript
-        ============================-->
+    ============================-->
 
-        <!-- jQuery -->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
-        <!-- Javascript -->
-        <script src="js/main.js" type="text/javascript"></script>
+    <!-- Javascript -->
+    <script src="js/main.js" type="text/javascript"></script>
 
-    </body>
+</body>
 
 </html>
