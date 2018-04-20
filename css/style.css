@@ -34,60 +34,33 @@ input, select {
 a:focus, button:focus {
   outline: none; }
 
-body {
-  font-size: 16px; }
-
 h1 {
   font-family: 'Montserrat', sans-serif;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
   line-height: 1.2;
-  font-size: 5em;
-  font-weight: 900;
-  letter-spacing: -0.05em; }
-
-h3 {
-  font-family: 'Montserrat', sans-serif;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  line-height: 1.2;
-  font-size: 1em;
   font-weight: 500;
+  font-size: 1em;
   color: #2f3940; }
 
 p {
   font-family: 'Montserrat', sans-serif;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
   line-height: 1.2;
-  font-size: .7em;
   font-weight: 500;
+  font-size: .7em;
   color: #9ea9b2; }
 
 .load-more {
   font-family: 'Montserrat', sans-serif;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
   line-height: 1.2;
+  font-weight: 500;
   color: #2f3940;
-  -webkit-transition: color .3s ease-in-out;
-  transition: color .3s ease-in-out;
-  background-color: none;
   border: 1px solid #b4babe;
   padding: 10px 14px;
-  border-radius: 4px;
-  -webkit-transition: .2s all ease-in-out;
-  transition: .2s all ease-in-out; }
+  border-radius: 4px; }
   .load-more:hover {
     background-color: #e8e8e8; }
 
 .disabled {
-  color: #9ea9b2;
-  cursor: no-drop; }
+  color: #9ea9b2; }
   .disabled:hover {
     background-color: #f6f6f6; }
 

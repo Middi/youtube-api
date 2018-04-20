@@ -1,6 +1,6 @@
-var channelId = 'UCX-b8pihLF-Q9mOhpTILfjw';
+var channelId = 'UCimIdsDPn0mE03Cb7C6aR8Q';
 var key = 'AIzaSyDcwEYXvmlat_s2gYCTUjOPJlZywkIwu10';
-var playlistId = "PL7Mh8U8DxyOG0zVj_5cpXYgFxGZ57CcJk";
+var playlistId = 'PL2fnLUTsNyq7A335zB_RpOzu7hEUcSJbB';
 var token = null;
 var firstVid = 'STwoa-9jxi0';
 
@@ -13,7 +13,6 @@ $(document).ready(function () {
             displayVid(id);
         }
     });
-
 
 
     // Load Videos On Page Load
@@ -42,6 +41,8 @@ $(document).ready(function () {
                 pageToken: token
             },
             function (data) {
+                var id = data.items[0].snippet.resourceId.videoId;
+                displayVid(id);
                 var nextPage = data.nextPageToken;
                 resultsLeft(nextPage);
                 resultsLoop(data);
@@ -76,7 +77,7 @@ $(document).ready(function () {
                     <img src="${thumb}" class="thumb">
                 </div>
                 <div class="vid-details">
-                    <h3>${title}</h3>
+                    <h1>${title}</h1>
                     <p class="description">${desc}</p>
                 </div>
             </article>`);
@@ -92,16 +93,14 @@ $(document).ready(function () {
     //--------------------
     // Aspect ratio for video
     //-------------------- 
-    var $allVideos = $("iframe[src^='//player.vimeo.com'], iframe[src^='//www.youtube.com'], object, embed"),
-        $fluidEl = $("figure");
+    var $allVideos = $("iframe[src^='//player.vimeo.com'], iframe[src^='//www.youtube.com'], object, embed");
+    var $fluidEl = $("figure");
 
     $allVideos.each(function () {
 
-        $(this)
-            // jQuery .data does not work on object/embed elements
-            .attr('data-aspectRatio', this.height / this.width)
-            .removeAttr('height')
-            .removeAttr('width');
+        $(this).attr('data-aspectRatio', this.height / this.width)
+               .removeAttr('height')
+               .removeAttr('width');
     });
 
     $(window).resize(function () {
@@ -109,9 +108,8 @@ $(document).ready(function () {
         var newWidth = $fluidEl.width();
         $allVideos.each(function () {
             var $el = $(this);
-            $el
-                .width(newWidth)
-                .height(newWidth * $el.attr('data-aspectRatio'));
+            $el.width(newWidth)
+               .height(newWidth * $el.attr('data-aspectRatio'));
         });
     }).resize();
 });
