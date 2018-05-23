@@ -66,8 +66,8 @@
 		"oA": 0,
 		"oAP": "\/js\/main-min-min.js",
 		"oF": 0,
-		"sC": 0,
-		"tS": 0
+		"sC": 3,
+		"tS": 1
 		},
 	"\/js\/main.js": {
 		"ft": 64,
@@ -76,8 +76,8 @@
 		"oA": 0,
 		"oAP": "\/js\/main-min.js",
 		"oF": 0,
-		"sC": 0,
-		"tS": 0
+		"sC": 3,
+		"tS": 1
 		},
 	"\/scss\/_colors.scss": {
 		"aP": 0,
@@ -1969,8 +1969,8 @@
 		"autoOutputPathStyle": 0,
 		"createSourceMap": 0,
 		"minifyOutput": 1,
-		"syntaxCheckerStyle": 0,
-		"transpilerStyle": 0
+		"syntaxCheckerStyle": 3,
+		"transpilerStyle": 1
 		},
 	"languageDefaultsJSON": {
 		"autoOutputAction": 1,
