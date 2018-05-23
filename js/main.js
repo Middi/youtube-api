@@ -1,5 +1,5 @@
 var channelId = 'UCimIdsDPn0mE03Cb7C6aR8Q';
-var key = 'AIzaSyDcwEYXvmlat_s2gYCTUjOPJlZywkIwu10';
+var key = 'API-Key';
 var playlistId = 'PL2fnLUTsNyq7A335zB_RpOzu7hEUcSJbB';
 var token = null;
 var firstVid = 'STwoa-9jxi0';
